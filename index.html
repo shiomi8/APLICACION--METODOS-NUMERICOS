@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análisis de Tuberías</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Análisis de Tuberías en Paralelo</h1>
+        <form id="pipelineForm">
+            <h2>Datos de Entrada</h2>
+            <div class="form-group">
+                <label for="caudalTotal">Caudal Total (m³/s):</label>
+                <input type="number" id="caudalTotal" step="0.01" placeholder="Ej: 1.0" required>
+            </div>
+
+            <h3>Configuración de Tuberías</h3>
+            <div id="pipelineInputs">
+                
+            </div>
+
+            <button type="button" id="addPipeline">Añadir Tubería</button>
+            <button type="submit">Calcular</button>
+        </form>
+
+        <div id="results" class="hidden">
+            <h2>Resultados</h2>
+            <ul id="resultsList"></ul>
+        </div>
+    </div>
+
+    <script src="js.js"></script>
+</body>
+</html>
